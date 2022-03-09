@@ -1,0 +1,92 @@
+<html >
+<head>
+  <title></title>
+  <link rel="stylesheet" href="blog.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- NavBar -->
+<nav>
+    <div class="left-side">
+        <a href="index.html">
+            <img src="images/logo.png" alt="my logo">
+        </a>
+
+        <ol>
+            <li>
+                <a href="index.html" target="blank">Home</a>
+            </li>
+            <li>
+                <a href="blog.html" target="blank">Blog</a>
+            </li>
+        </ol>
+    </div>
+
+    <div class="right-side">
+        <a href="Task-2.html" target="blank">Contact Me</a>
+    </div>
+</nav>
+<h1>Dumbways Web App</h1>
+<div class="container-detail-top">
+    <div class="container-top">
+        <div class="container-top-left">
+            <img src="images/node.png" alt="node" style="width: 50%; height: 500px;">
+        </div>
+        <div class="container-top-right">
+            <div class="detail">
+                <h2>Duration</h2>
+                <div style="display: flex; align-items: center;">
+                    <img src="images/calender.png" style="width: 30px; height: 30px;"><p style="margin-left: 20px;">12 jan 2021 - 11 Feb 2021</p> </img>
+                </div>
+                <div style="display: flex;align-items: center">
+                    <img src="images/jam.png"   style="width: 35px; height: 35px;"><p style="margin-left: 20px;" id="duration">1 month</p> </img>
+                </div>
+                <h2>Technologies</h2>
+                <div class="js">
+                    <div class="js-left">
+                        <div style="display: flex; align-items: center;">
+                            <i class="fa fa"></i>
+                            <img src="images/react.png" style="width: 35px; height: 35px;"><p style="margin-left: 15px;">React Js</p> </img>
+                        </div>
+                        <div style="display: flex; align-items: center;">
+                            <img src="images/node.png" style="width: 35px; height: 35px;"><p style="margin-left: 15px;">Node Js</p> </img>
+                        </div>
+                    </div>
+                    <div class="js-right">
+                        <div style="display: flex; align-items: center;">
+                            <img src="images/js.png" style="width: 35px; height: 35px;"><p style="margin-left: 15px;">Java Script</p> </img>
+                        </div>
+                        <div style="display: flex; align-items: center;">
+                            <img src="images/socket.png" style="width: 30px; height: 30px;padding-left: 3px;"><p style="margin-left: 20px;">Socket IO</p> </img>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+    </div>
+</div>
+<div style="width: 90%;text-align: justify;margin: auto;">
+    <p>
+        Sejak awal munculnya, Node.js dianggap sebagai platform yang powerful untuk keperluan pengembangan aplikasi. Performanya sesuai untuk kebutuhan aplikasi era modern yang membutuhkan pemrosesan data real-time yang harus dieksekusi dengan cepat.
+
+Kira-kira, apa saja keunggulan Node.js dibandingkan program pengembangan aplikasi lainnya? Berikut beberapa di antaranya:
+
+Pemrosesan cepat – Node.js dapat mengeksekusi kode dengan sangat cepat karena berjalan pada V8 JavaScript Engine dari Google Chrome.
+Library yang lengkap – Node.js menyediakan banyak library/module JavaScript yang membantu menyederhanakan pengembangan aplikasi web.
+Mekanisme single threaded – membantu server merespon secara asynchronous sehingga menjadi lebih scalable dibanding server tradisional yang menggunakan banyak thread untuk menangani request.
+Penanganan request serentak – karakteristik Node.js yang asynchronous dan single thread dirancang untuk implementasi server yang dapat menangani banyak request pada waktu yang sama.
+Kebebasan membangun apps – Node.js memberi lebih banyak ruang kebebasan untuk membangun semuanya dari nol dengan caramu sendiri.
+Bersifat open source – siapapun dapat melihat struktur kode dan juga dapat memodifikasi dan mengembangkannya.
+    </p>
+</div>
+<script>
+    let start = new Date ('12-1-2021 00:00:00')
+    let end = new Date ('11-2-2021 00:00:00')
+     let distance = start- end // miliseconds
+    let monthDistance = Math.floor(distance / (4*7*24 * 60 * 60 * 1000 )) // convert to month
+    
+    document.getElementById('duration').innerText = monthDistance+' month'
+</script>
+</body>
+</html>
